@@ -1,0 +1,207 @@
+<html>
+<html lang="en">
+<head>
+<title>Home</title>
+<style>
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#161616;	
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#e6b800;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+ 
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#fff;
+	font-size: 12px;
+	
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#292929;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#292929;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+}
+.home{
+	height:60%;
+	position:absolute;
+	bottom:10%;
+	left:30%;
+	transform: translateX(-70%);
+}
+.text{
+	font-family: arial;
+	color: #ffcc00;
+                  align="left"
+	font-size: 150%;
+	line-height: 100px;
+	position: absolute;
+	left:45%;
+	top:45%;
+	transform:translate(-15%,-30%);
+}
+.text2{
+	font-family: arial;
+	color: #fff;
+                  align="left"
+	font-size:;
+	line-height:30px;
+	position: absolute;
+	left:47%;
+	top:55%;
+	transform:translate(-15%,-30%);
+}
+.text3{
+	font-family: arial;
+	color: #fff;
+                  align="left"
+	font-size: 30px;
+	line-height:30px;
+	position: absolute;
+	left:50%;
+	top:70%;
+	transform:translate(-15%,-30%);
+}
+<!--
+.styling{
+background-color: #e6b800;
+color:#000;
+font: bold 18px arial;
+padding: 5px;
+}
+footer{
+padding:5px;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+background: #e6b800;
+color:black;
+font-family: Arial;
+letter-spacing: 1px;
+}
+</style>
+</head>
+<body bgcolor="#000">
+<embed src="audio/upbeat.mp3" hidden="true" volume="10"></embed>
+<br />
+<h3 align="justify">
+
+<section id="main">
+	<nav>
+	<a href="index.html" class="logo">HI I'M ILHAM</a>
+	<div class="toggle"></div>
+	<ul class="menu">
+	<li class="active"><a href="index.html" >Home</a></li>	
+	<li><a href="biodata.html">biodata</a></li>
+                 <li><a href="experience.html">experience</a></li>
+                 <li><a href="education.html">education</a></li>
+	<li><a href="family.html">family</a></li>	
+	<li><a href="gallery.html">gallery</a></li>		
+	<li><a href="contact.html">Contact Me</a></li>		
+	</ul>
+	</nav>
+ </section>
+<image src="image/banner.jpg" width=100% height="40%">
+<img alt="home" class="home" src="image/me.png">
+<font face="arial" font size="60">
+<div class="text">HI THERE!</div></font>
+<font face="arial" font size="60">
+<div class="text2">I'M ILHAM IZANI</div></font>
+<div class="text3">
+<p>Hello, My name is Muhammad Ilham Izani Bin Rouslan. I am a student from UiTM Merbok, Kedah. Im Currently major in Information Management.
+This year is my final year at UiTM Merbok. Mostly the content of this website is about my life and my family.
+Inside this website audience can see some part and memories of my life.</p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="biodata.html"><button>START</button></a>
+<br>
+ <a href='http://www.freevisitorcounters.com'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=a48c3a56d23e7d75136b1550708e37f70c9d3b0e'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/774014/t/6"></script>
+<br><br>
+<span id="digitalclock" class="styling"></span>
+
+<script>
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+<br>
+<br><br><br><br>
+<footer>
+This website are designed for IMD311 Individual Assigment
+<br>
+All Right Reserved By Ilham Izani
+</footer>
+</body>
+</html>
